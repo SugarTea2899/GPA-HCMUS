@@ -10,7 +10,7 @@ for (i = 1, row = null; row = table.rows[i]; i++) {
                 continue;
             }
 				
-        if (row.cells[5].innerText == "") continue;
+        if (row.cells[5].innerText == "" || row.cells[5].innerText == "Vắng") continue;
 		if (parseFloat(row.cells[5].innerText) < 5) continue;
 		
         const credit = parseInt(row.cells[2].innerText);
